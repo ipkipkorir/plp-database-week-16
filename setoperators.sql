@@ -37,7 +37,7 @@ VALUES
 (5, 'James', 'Zebdee', 18000);
 
 -- Use the UNION operator to retrieve a list of unique employees from both tables.
- SELECT * FROM employeeA UNION SELECT ALL * FROM employeeB;
+SELECT * FROM employeeA UNION SELECT ALL * FROM employeeB;
 -- +-------------+------------+-----------+--------+
 -- | employee_id | first_name | last_name | salary |
 -- +-------------+------------+-----------+--------+
@@ -54,7 +54,7 @@ VALUES
 
 
 -- Use the INTERSECT operator to find employees who are common in both tables.
- SELECt * FROM employeeA INTERSECT SELECT * FROM employeeB ORDER BY last_name;
+SELECt * FROM employeeA INTERSECT SELECT * FROM employeeB ORDER BY last_name;
 -- +-------------+------------+-----------+--------+
 -- | employee_id | first_name | last_name | salary |
 -- +-------------+------------+-----------+--------+
